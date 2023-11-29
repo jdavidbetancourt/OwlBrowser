@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Agrega estilos para la barra de navegación */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 3rem 1rem 0;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.navbar li {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin-right: 0;
+}
+
+/* Estilo para las imágenes en la barra de navegación */
+.navbar .other {
+    width: 2rem;
+    height: auto;
+}
+.navbar .profile {
+    width: 5rem;
+    height: auto;
+}
