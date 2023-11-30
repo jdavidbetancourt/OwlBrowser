@@ -9,7 +9,13 @@ html {
 }
 
 /* Agrega estilos para la barra de navegación */
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #5f0f40;
+}
 .navbar ul {
+    
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -26,16 +32,153 @@ html {
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     margin-right: 0;
 }
-
 /* Estilo para las imágenes en la barra de navegación */
 .navbar .other {
     width: 2rem;
     height: auto;
 }
+.navbar .other:hover {
+    cursor: pointer;
+}
 .navbar .profile {
     width: 5rem;
     height: auto;
+}
+.navbar .profile:hover {
+    cursor: pointer;
+}
+/* Estilo para los elementos de texto en la barra de navegación */
+.navbar a:hover {
+    color: #5f0f40;
+    background-color: whitesmoke;
+    border: 0.1rem solid #5f0f40 ;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.main-content {
+    width: 100vw;
+    height: 85vh;
+    background-color: #5f0f40;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.logo-image {
+    width: 15rem;
+    height: auto;
+    /* padding-right: 4rem; */
+    cursor: pointer;
+}
+.input-write {
+    width: 25vw;
+    color: whitesmoke;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    caret-color: whitesmoke;
+    
+
+}
+.logo-text {
+    margin-right: 4.5rem;
+    color: whitesmoke; 
+    font-size: 10rem;
+    font-weight: bold;
+    justify-content: center;
+    cursor: pointer;
+}
+.page .logo {
+    display: flex;
+    flex-direction: row;
+}
+.search {
+    width: 35rem; /* Ajusto el tamaño del container a 30 puntos de la vista horizontal */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #5f0f40;
+    border: 0.1rem solid whitesmoke ;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.search img {
+    width: 2rem;
+    cursor: pointer;
+}
+.buttons button {
+    margin-right: 1rem; 
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    color: #5f0f40;
+     
+}
+.buttons button:hover {
+    cursor: pointer;
+}
+.buttons button:last-child {
+    margin-right: 0;
+}
+.footer {
+    width: 100vw;
+    height: 5vh;
+    background-color: #5f0f40;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1rem solid grey;
+}
+.navbar-left ul{   
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.4rem;
+    list-style: none;
+}
+.navbar-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.4rem;
+}
+.navbar-left ul a,
+.navbar-right ul a {
+    text-decoration: none;
+    
+}
+.navbar-left ul a {
+    padding-left: 2rem;
+    color: grey;
+}
+.navbar-right ul a {
+    padding-right: 2rem;
+    color: grey;
+}
+.navbar-left a:hover,
+.navbar-right a:hover {
+    cursor: pointer;
 }
